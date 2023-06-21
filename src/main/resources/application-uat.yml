@@ -21,12 +21,12 @@ spring:
         dialect: org.hibernate.dialect.MySQL5Dialect
         format_sql: false
   datasource:
-    url: jdbc:mysql://192.178.10.104:3306/user_management?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://192.178.10.1043:3306/user_management?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password: Care@3210
+    password: Care@*3210
     driver-class-name: com.mysql.cj.jdbc.Driver
 keycloak:
-  auth-server-url: http://192.178.10.104:8080/auth
+  auth-server-url: http://192.178.10.1043:8080/auth
   realm: Eservices
   resource: eservice-app
   public-client: true
@@ -40,7 +40,7 @@ keycloak:
 com :
    travel :
       keycloak :
-         urlKeycloakHost : http://192.178.10.104:8080/
+         urlKeycloakHost : http://192.178.10.1043:8080/
          client_secret : 0a739918-4210-41bd-bef9-fdcf0a7f6eb5
          user : admin
          credentials : password
