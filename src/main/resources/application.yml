@@ -1,0 +1,22 @@
+server:
+  port: 1219
+  servlet:
+    context-path: /user-management
+logging:
+  level:
+    org.springframework: ERROR
+    com.cawcaw : ERROR
+    
+spring:
+  devtools:
+      restart:
+        enabled: false
+  main:
+    allow-bean-definition-overriding: true
+management:
+    endpoints:
+        health:
+            show-details: always
+        web:
+            exposure:
+                include: prometheus,metrics,health,info,auditevents,beans,caches,conditions,configprops,env,flyway,health,httpexchanges,integrationgraph,loggers,liquibase,mappings,quartz,scheduledtasks,sessions,shutdown,startup,threaddump,heapdump,logfile
